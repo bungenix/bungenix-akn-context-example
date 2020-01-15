@@ -1,0 +1,221 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.App h2 {text-align:center; color: #09d3ac; }
+
+.left-col {
+  width:49%;
+  float:left;
+  //border:2px solid black;
+  margin-left:5px;
+  margin-top: 5px;
+}
+
+textarea.code {
+    width:95%;
+    overflow:auto;
+    background-color:#FFF;
+    color:#222;
+    font-family:Courier, monospace;
+    font-weight:normal;
+    font-size:14px;
+    font-weight:bold;
+    line-height:18px;
+    margin-left:10px;
+    /*
+    line-height:40px;
+    padding-left:100px;
+    padding-right:100px;
+    padding-top:45px;
+    padding-bottom:34px;
+    */
+    //background-image:url(https://static.tumblr.com/maopbtg/E9Bmgtoht/lines.png), url(https://static.tumblr.com/maopbtg/nBUmgtogx/paper.png);
+    //background-repeat:repeat-y, repeat;
+    -webkit-border-radius:12px;
+    border-radius:12px;
+    -webkit-box-shadow: 0px 2px 14px #000;
+    box-shadow: 0px 2px 14px #000;
+    border-top:1px solid #FFF;
+    border-bottom:1px solid #FFF;
+
+}
+.right-col {
+  width: 49%;
+  float:right;
+  //border:2px solid black;  
+  margin-left:5px;
+  margin-top: 5px;
+  margin-right:5px;
+  text-align:left;
+}
+
+.full-col {
+  width: 98%;
+  float:left;
+  //border:2px solid black;  
+  margin-left:5px;
+  margin-top: 5px;
+  margin-right:5px;
+  text-align:left;
+}
+
+
+.tabs-holder {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  text-align:left;
+}
+
+.xml-view {
+  height: 600px;
+  margin-left:10px;
+  word-wrap: break-word;
+  //word-wrap: break-word;
+  overflow-wrap: break-word;
+  //overflow-x:scroll;
+  div {
+    div {
+      white-space: pre-wrap !important;
+    }
+  }
+  overflow-y: scroll;
+}
+
+.button-two {
+  margin-left:3px;
+  margin-top:4px;
+  border-radius: 4px;
+  background-color:#09d3ac;
+  color: white;
+  font-size:14px;
+  font-weight:bold;
+  border: none;
+  padding: 8px;
+  margin-bottom:0px;
+  width: 200px;
+  transition: all 0.5s;
+}
+
+
+
+.button-two:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+button.minimal {
+  margin-right:2px;
+  background: #e3e3e3;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 0 1px 1px #f6f6f6;
+  box-shadow: inset 0 0 1px 1px #f6f6f6;
+  color: #333;
+  font: bold 12px/1 "helvetica neue", helvetica, arial, sans-serif;
+  padding: 8px 0 9px;
+  text-align: center;
+  text-shadow: 0 1px 0 #fff;
+  width: 130px; }
+  button.minimal:hover {
+    background: #d9d9d9;
+    -webkit-box-shadow: inset 0 0 1px 1px #eaeaea;
+    box-shadow: inset 0 0 1px 1px #eaeaea;
+    color: #222;
+    cursor: pointer; }
+  button.minimal:active {
+    background: #d0d0d0;
+    -webkit-box-shadow: inset 0 0 1px 1px #e3e3e3;
+    box-shadow: inset 0 0 1px 1px #e3e3e3;
+    color: #000; }
+
+
+
+.btn-holder {
+  margin-top:10px; margin-left:2px; margin-bottom:10px;
+}
+
+.react-autosuggest__container {
+  position: relative;
+}
+
+.react-autosuggest__input {
+  width: 240px;
+  height: 30px;
+  padding: 10px 20px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.react-autosuggest__input--focused {
+  outline: none;
+}
+
+.react-autosuggest__input--open {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.react-autosuggest__suggestions-container {
+  display: none;
+}
+
+.react-autosuggest__suggestions-container--open {
+  display: block;
+  position: absolute;
+  top: 40px;
+  width: 280px;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  font-family: var(--font-3);
+  font-weight: 300;
+  font-size: 16px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 9;
+}
+
+
+.react-autosuggest__suggestions-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.react-autosuggest__suggestion {
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.react-autosuggest__suggestion--highlighted {
+  background-color: #ddd;
+}
+
+#json-pretty {width: 50% !important; margin-left: -15% !important; height: 600px; overflow-y: auto;}
