@@ -8,7 +8,6 @@ class App extends React.Component {
 
     state={
       value: '',
-      suggestionValue : '',
       suggestions: []
     };
 
@@ -46,14 +45,14 @@ class App extends React.Component {
     );
 
     renderElementInfo = (value) => {
-      if (value != '') {
+      if (value !== '') {
         const valueJson = elementContext(value);
         if ("error" in valueJson)  {
           return null;
         } else {
           const link = "http://schema.akomantoso.com/element/" + value;
           return [
-            <p>Querying: <b><a target="_blank" href={link}>{value}</a></b></p>,
+            <p>Querying: <b><a rel="noopener noreferrer" target="_blank" href={link}>{value}</a></b></p>,
             <Viewer json={valueJson} />
           ];
         }
@@ -63,7 +62,7 @@ class App extends React.Component {
     }
 
     render(){
-      const {value, suggestions, suggestionValue} = this.state;
+      const {value, suggestions} = this.state;
       const inputProps = {
         placeholder: 'Type a programming language',
         value,
@@ -91,7 +90,7 @@ class App extends React.Component {
             </div>
           </div>
           <div style={{width: "100%", display: "inline-block"}}>
-            <a href="https://github.com/bungenix/bungenix-akn-context">@github</a>, <a href="https://twitter.com/ashokharix">@twitter</a>
+          <a  target="_blank" rel="noopener noreferrer" href="https://github.com/bungenix/bungenix-akn-context-example">Source code of this example</a>, <a rel="noopener noreferrer" target="_blank" href="https://github.com/bungenix/bungenix-akn-context">@github/bungenix-akn-context</a>, <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/ashokharix">@twitter</a>
           </div>
         </div>
       );
